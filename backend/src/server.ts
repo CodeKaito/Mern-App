@@ -12,7 +12,7 @@ const port = process.env.PORT;
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING!)
     .then(() => {
-        console.log("DB connected");
+        console.log("Database connected");
 
         app.listen(port, () => {
             console.log("Server running on port: " + port)
